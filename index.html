@@ -1013,7 +1013,7 @@
       const res = await callGasApi({ action: 'login', username, password });
 
       btn.disabled = false;
-      btn.innerHTML = '<span>Masuk Aplikasi</span><i data-lucide="arrow-right" class="w-4 h-4 text-emerald-400"></i>';
+      btn.innerHTML = '<span>Masuk</span><i data-lucide="arrow-right" class="w-4 h-4 text-emerald-400"></i>';
       refreshIcons();
 
       if (res.status === 'success' && res.user) {
@@ -3072,7 +3072,7 @@
           envBadge.className = 'px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-semibold border border-emerald-500/30';
         }
         if (headerIndicator) {
-          headerIndicator.innerHTML = '<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Live Google Sheets';
+          headerIndicator.innerHTML = '<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Live Connected';
           headerIndicator.className = 'hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200';
         }
       }
